@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniversario</title>
+
+    <link rel="stylesheet" href="./styles/main.scss">
+</head>
+<body>
+    <header class="nav">
+        <nav class="nav__container">  
+            <h1 class="nav__title">Aniversário do Filipe</h1>
+            <ul  class="nav__links">
+                <a href="#" class="nav__links__item">
+                    <li>
+                        Confirmar presença
+                    </li>
+                </a>
+                <a href="#" class="nav__links__item">
+                    <li>
+                        Como chegar
+                    </li>
+                </a>
+                <a href="#" class="nav__links__item">
+                    <li>
+                        Lista de Presentes
+                    </li>
+                </a>
+            </ul>
+        </nav>
+        
+    </header>
+    <section class="hero">
+        <p class="hero__message">
+            Falta <span class="contador">4 dias</span> para meu aniversário, venha comemorar comigo!
+        </p>
+        <div class="hero__container">
+            <div class="hero__fotos">
+                <img src="https://placehold.jp/800x480.png" alt="">
+            </div>
+            <div class="hero__content  hero__content--is-active" id="confirmar-presenca">
+                <h2 class="hero__content__title">Confirmar presença</h2>
+                <form action="" class="confirmar-presenca">
+                    <input type="text" placeholder="Nome" name="nome" id="nome">
+                    <input type="tel" placeholder="Telefone" name="telefone" id="telefone">
+                    <fieldset>
+                        <legend>Acompanhante?</legend>
+                        <div class="radio-button">
+                            <input type="radio" id="Sim" name="acompanhante" value="Sim">
+                            <label for="Sim">Sim</label>
+                        </div>
+                        <div class="radio-button">
+                            <input type="radio" id="Não" name="acompanhante" value="Não" checked>
+                            <label for="Nao">Não</label>
+                        </div>
+                    </fieldset>
+                    <button type="submit">Confirmar</button>
+                </form>
+            </div>
+            <div class="hero__content" id="como-chegar">
+                <h2 class="hero__content__title">Como chegar</h2>
+                <iframe class="como-chegar" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.5793281876486!2d-54.61480101118146!3d-20.451851899818095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9486e7c8284fa59d%3A0x2ee3c0470edd7006!2sOutz%20Burger!5e0!3m2!1spt-BR!2sbr!4v1730407012613!5m2!1spt-BR!2sbr" width="400" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="hero__content" id="lista-presentes">
+                <h2 class="hero__content__title">Lista de Presentes</h2>
+                <ul class="lista-presentes">
+                    <a href="" class="hero__content__item">
+                        <li>
+                            <img src="./images/Amazon_logo.svg.webp" alt="">
+                        </li>
+                    </a>
+                    <a href="" class="hero__content__item">
+                        <li>
+                            <img src="./images/magalu-logo.png" alt="">
+                        </li>
+                    </a>
+                    <a href="" class="hero__content__item">
+                        <li>
+                            <img src="./images/americanas-logo.png" alt="">
+                        </li>
+                    </a>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
